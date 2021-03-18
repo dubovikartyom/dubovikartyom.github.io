@@ -22,13 +22,14 @@ header{
 header h1{
 	text-align: center;
 	font-size: 80px;
+	text-shadow: 5px 5px 7px #acb5b3;
 }
 
 header nav a{
 	display: inline-block;
 	padding: 0 30px;
 	color: white;
-	background-color: #a34515;
+	background-color: #000000;
 	height: 60px;
 	vertical-align: middle;
 	line-height: 60px;
@@ -37,7 +38,8 @@ header nav a{
 }
 
 header nav{
-	background-color: #a34515;
+	background-color: #000000;
+	box-shadow: 5px 5px 7px #acb5b3;
 }
 
 header nav a:hover {
@@ -56,10 +58,11 @@ main{
 main .leftbar{
 	display: inline-block;
 	width: 250px;
-	background-color: #a34515;
+	background-color: #000000;
 	color: white;
 	vertical-align: top;
 	border-radius: 0 0 50px 0;
+	box-shadow: 5px 5px 7px #acb5b3;
 }
 
 main .leftbar a{
@@ -119,7 +122,7 @@ main .leftbar li{
 
 
 footer {
-	background-color:#a34515;
+	background-color:#000000;
 	text-align: center;
 	line-height: 100px;
 	color: white;
