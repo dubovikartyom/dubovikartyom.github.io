@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My seventh lesson</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+	  <h1 id="lesson8">Мое восьмое занятие</h1>
+	  <nav>
+        <a href="../index.html">Главная</a>
+        <a href="../objectives.html">Мои цели</a>
+        <a href="../layouts/layouts-menu.html">Макеты</a>
+      </nav>
+    </header>
+
+    <main>
+	    <div class="leftbar">
+		  <ul>
+		    <li>
+			  <a href="lesson.html">Мое первое занятие</a>
+			</li>
+			<li>
+			  <a href="lesson2.html">Мое второе занятие</a>
+			</li>
+			<li>
+			  <a href="lesson3.html">Мое третье занятие</a>
+		    </li>
+		    <li>
+			  <a href="lesson4.html">Мое четвертое занятие</a>
+		    </li>
+		    <li>
+		    	<a href="lesson7.html">Мое седьмое занятие</a>
+		    </li>
+		    <li>
+		    	<a href="#lesson8">Мое восьмое занятие</a>
+		    </li>
+		   </ul>
+		</div>
+		<div class="content">
+			<p>Сегодня мы научились создавать таблицы в CSS в свойстве "display", для создания равных по высоте элементов.</p>
+			<table cellspacing="2" border="1" cellpadding="5">
+				<tr>
+					<th>Значение</th>
+					<th>Описание</th>
+				</tr>
+				<tr>
+					<td>table</td>
+					<td>Определяет, что элемент является блочной таблицей подобно использованию тега</td>
+				</tr>
+				<tr>
+					<td>table-cell</td>
+					<td>Указывает, что элемент представляет собой ячейку таблицы</td>
+				</tr>
+			</table>
+			<p>Изучили свойства для "обтекания" текстом других элементов, с помощью поплавков.</p>
+			<table cellspacing="2" border="1" cellpadding="5">
+				<tr>
+					<th>Свойство</th>
+					<th>Значение</th>
+				</tr>
+				<tr>
+					<td>float</td>
+					<td>Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон.</td>
+				</tr>
+				<tr>
+					<td>clear</td>
+					<td>Устанавливает, с какой стороны элемента запрещено его обтекание другими элементами. Если задано обтекание элемента с помощью свойства float, то clear отменяет его действие для указанных сторон.</td>
+				</tr>
+			</table>
+			<p>Изучили позиционирование, с помощью свойства position и его значения:</p>
+			<table cellspacing="2" border="1" cellpadding="5">
+				<tr>
+					<th>Значение</th>
+					<th>Описание</th>
+				</tr>
+				<tr>
+					<td>absolute</td>
+					<td>Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента.</td>
+				</tr>
+				<tr>
+					<td>fixed</td>
+					<td>По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы.</td>
+				</tr>
+				<tr>
+					<td>relative</td>
+					<td>Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</td>
+				</tr>
+				<tr>
+					<td>static</td>
+					<td>Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.</td>
+				</tr>
+			</table>
+			<div class="cards">
+				<div class="card a"></div>
+				<div class="card b"></div>
+				<div class="card c"></div>
+				<div class="card d"></div>
+				<div class="card e"></div>
+			</div>
+	    </div>          
+       <footer>
+         Dubovyk Artem &copy;
+       </footer>
+
+     </main>
+   </div>
+</body>
+</html>

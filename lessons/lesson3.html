@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My third lesson</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<div class="container">
+   	<header>
+	  <h1 id="lesson3">Мое третье занятие</h1>
+	  <nav>
+        <a href="../index.html">Главная</a>
+        <a href="../objectives.html">Мои цели</a>
+        <a href="../layouts/layouts-menu.html">Макеты</a>
+      </nav>
+    </header>
+
+
+    <main>
+       <div class="leftbar">
+        <ul>
+          <li>
+           <a href="lesson.html">Мое первое занятие</a>
+         </li>
+         <li>
+           <a href="lesson2.html">Мое второе занятие</a>
+         </li>
+         <li>
+           <a href="#lesson3">Мое третье занятие</a>
+          </li>
+          <li>
+           <a href="lesson4.html">Мое четвертое занятие</a>
+          </li>
+          <li>
+           <a href="lesson7.html">Мое седьмое занятие</a>
+          </li>
+          <li>
+           <a href="lesson8.html">Мое восьмое занятие</a>
+          </li>          
+         </ul>
+      </div>
+      <div class="content">
+              <p>Сегодня мы начали изучать CSS. Рассмотрели возможность подключения стилей отдельным файлом, с помощью указания пути к файлу в теге link, внутри header. А так же, два самыъ главных тега, в которых прописуются селекторы CSS, это: div - для блочных элементов и span для строчных. Вложенность селекторов указывается следующим образом:</p>
+           <table cellspacing="2" border="1" cellpadding="5">
+            <tr>
+               <th>Метод</th>
+               <th>Синтаксис</th>
+               <th>Описание</th>
+            </tr>
+            <tr>
+               <td>ИЛИ</td>
+               <td>selector, selector</td>
+               <td>выбирает все совпадающие селекторы</td>
+            </tr>
+            <tr>
+               <td>Прямое вложение</td>
+               <td>selector > selecrot</td>
+               <td>выбирает только те элементы, которые являются дочерними непосредственно по отношению к указанному элементу.</td>
+            </tr>
+            <tr>
+               <td>Любая вложенность</td>
+               <td>selector selector</td>
+               <td>выбирает элементы, которые находятся внутри указанного элемента (вне зависимости от уровня вложенности).</td>
+            </tr>
+            <tr>
+               <td>Следующий элемент</td>
+               <td>select + select</td>
+               <td>выбирает элемент, который находится непосредственно после указанного элемента.</td>
+            </tr>
+            <tr>
+               <td>По атрибуту</td>
+               <td>[attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</td>
+               <td>этот селектор выбирает все элементы, имеющие данный атрибут или атрибут с определённым значением.</td>
+            </tr>
+           </table>
+           <p>Также рассмотрели новые CSS свойства, такие как:</p>
+                  <table cellspacing="2" border="1" cellpadding="5">
+                     <tr>
+                        <th>Свойство</th>
+                        <th>Значение</th>
+                     </tr>
+                     <tr>
+                        <td>line-height</td>
+                        <td>устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта.</td>
+                     </tr>
+                     <tr>
+                        <td>letter-spacing</td>
+                        <td>определяет интервал между символами</td>
+                     </tr>
+                     <tr>
+                        <td>word-spacing</td>
+                        <td>устанавливает интервал между словами</td>
+                     </tr>
+                     <tr>
+                        <td>text-shadow</td>
+                        <td>устанавливает тень текста</td>
+                     </tr>
+                     <tr>
+                        <td>font-family</td>
+                        <td>устанавливает стиль шрифта</td>
+                     </tr>
+                     <tr>
+                        <td>padding</td>
+                        <td>внешний отступ элемента</td>
+                     </tr>
+                     <tr>
+                        <td>margin</td>
+                        <td>внутренний отступ элемента</td>
+                     </tr>
+                     <tr>
+                        <td>text-decoration</td>
+                        <td>добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания</td>
+                     </tr>
+                   </table>
+            <p>И научились оформлять фон, его цвет и добавлять в него изображения:</p>
+                  <table cellspacing="2" border="1" cellpadding="5">
+                     <tr>
+                        <th>Свойство</th>
+                        <th>Значение</th>
+                     </tr>
+                     <tr>
+                        <td>background-color</td>
+                        <td>задает цвет фона</td>
+                     </tr>
+                     <tr>
+                        <td>background-image</td>
+                        <td>задает изображение фона</td>
+                     </tr>
+                     <tr>
+                        <td>background-size</td>
+                        <td>задает размер фона (height, width, cover, cantain)</td>
+                     </tr>
+                     <tr>
+                        <td>background-position</td>
+                        <td>положение фона</td>
+                     </tr>
+                     <tr>
+                        <td>background-repeat</td>
+                        <td>дублирования изображения фона</td>
+                     </tr>
+                     <tr>
+                        <td>background-attachment</td>
+                        <td>фиксация фона, при перемещении вниз/вверх, по странице</td>
+                     </tr>
+                  </table>
+       </div>          
+	<footer>
+    Dubovyk Artem &copy;
+    </footer>
+
+</main>
+</div>
+</body>
+</html>

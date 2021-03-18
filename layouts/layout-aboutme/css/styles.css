@@ -1,0 +1,449 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+body{
+	background-color: #d1d1d1;
+}
+
+.container{
+	width: 1280px;
+	margin: 0 auto 0 auto;
+	box-sizing: border-box;
+	background-color: white;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+.head{
+	display: inline-block;
+	border-bottom: 2px dashed black;
+	height: 220px;
+}
+
+.head h1{
+	display: inline-block;
+	font-weight: normal;
+	padding-top: 85px;
+	padding-bottom: 60px;
+	width: 100%;
+	font-size: 40px;
+
+}
+
+.head .last-line{
+	display: inline-block;
+	width: 460px;
+}
+
+
+
+.head nav{
+	display: inline-block;
+	
+}
+
+.head nav a{
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	width: 150px;
+	text-align: center;
+}
+
+.head nav a:hover{
+	border-bottom: 2px solid black;
+	font-weight: bold;
+}
+
+
+
+.about-me{
+	display: inline-block;
+	width: 100%;
+}
+
+.about-me .head{
+	display: inline-block;
+	height: 100%;
+	border-bottom: none;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.about-me .head h2{
+	display: inline-block;
+	font-size: 90px;
+	text-shadow: 3px 5px 1px #d1d1d1;
+	width: 100%;
+	margin-bottom: -20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+
+.about-me .head .h-line{
+	display: inline-block;
+	background-color: black;
+	width: 100%;
+	height: 5px;
+	box-shadow: 1px 1px 2px #d1d1d1;
+}
+
+.about-me .content{
+	display: inline-block;
+	padding-top: 60px;
+}
+
+.about-me .content .photo{
+	display: inline-block;
+
+}
+
+.about-me .content .photo img{
+	display: inline-block;
+	width: 390px;
+	height: 400px;	
+}
+
+.about-me .content .description{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 45px;
+	width: 50%;
+}
+
+.content .description h3{
+	display: inline-block;
+	color: white;
+	width: 600px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(320deg, white 45%, black 45%);
+	padding-left:15px;
+	line-height: 50px;
+	font-size: 30px;
+}
+
+
+.content .description .text{
+	display: inline-block;
+	padding-top: 30px;
+	text-align: justify;
+	line-height: 25px;
+	padding-bottom: 25px;
+}
+
+
+.content .description .quote{
+	display: inline-block;
+	background-color: #d1d1d1;
+	padding: 30px 25px 25px 20px;
+}
+
+.description .quote dl dt{
+	text-align: justify;
+	display: inline-block;
+	font-family: italic;
+	padding-bottom: 25px;
+}
+
+.description .quote dl dd{
+	text-align: right;
+}
+
+.about-me .content .h-line{
+	margin-top: 30px;
+	display: inline-block;
+	background-color: black;
+	width: 100%;
+	height: 2px;
+}
+
+
+
+
+.skill-and-work{
+	display: inline-block;
+	width: 100%;
+}
+
+.skill-and-work .container{
+	padding-top: 50px;
+}
+
+
+.skill-and-work .my-skill{
+	display: inline-block;
+	width: 50%;
+}
+
+
+.skill-and-work .my-skill h3{
+	display: inline-block;
+	color: white;
+	width: 550px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(320deg, white 60%, black 60%);
+	padding-left:15px;
+	line-height: 50px;
+	font-size: 30px;
+}
+
+.skill-and-work .my-skill .grad{
+	display: inline-block;
+	font-size: 20px;
+	padding-top: 25px;
+	width: 50%;
+}
+
+
+
+.my-skill .grad .photoshop{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	margin-bottom: 10px;
+	line-height: 40px;
+	padding-left: 15px;
+	width: 500px;
+	
+}
+.my-skill .grad .html{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+	margin-bottom: 10px;
+	line-height: 40px;
+	padding-left: 15px;
+	width: 500px;
+}
+.my-skill .grad .css{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+	margin-bottom: 10px;
+	line-height: 40px;
+	padding-left: 15px;
+	width: 500px;
+}
+.my-skill .grad .js{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	margin-bottom: 10px;
+	line-height: 40px;
+	padding-left: 15px;
+	width: 500px;
+}
+.my-skill .grad .angular{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);
+	line-height: 40px;
+	padding-left: 15px;
+	width: 500px;
+}
+
+.my-skill .grad table{
+	width: 500px;
+	height: 20px;
+}
+
+
+.my-skill .grad table td{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.my-skill .grad .scale{
+	display: inline-block;
+	width: 500px;
+}
+
+.my-skill .grad .scale .first{
+	display: inline-block;
+	padding-left: 83px;
+}
+
+.my-skill .grad .scale .second{
+	display: inline-block;
+	padding-left: 83px;
+}
+
+.my-skill .grad .scale .third{
+	display: inline-block;
+	padding-left: 83px;
+}
+
+.my-skill .grad .scale .fourth{
+	display: inline-block;
+	padding-left: 83px;
+}
+
+.my-skill .grad .scale .fifth{
+	display: inline-block;
+	padding-left: 83px;
+}
+
+
+
+.skill-and-work .my-work{
+	display: inline-block;
+	width: 490px;
+	vertical-align: top;
+	padding-left: 20px;
+}
+
+.skill-and-work .my-work h3{
+	display: inline-block;
+	color: white;
+	width: 400px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(320deg, white 45%, black 45%);
+	padding-left:15px;
+	line-height: 50px;
+	font-size: 30px;
+}
+
+.skill-and-work .my-work ul{
+	display: inline-block;
+	padding-top: 25px;
+}
+
+.skill-and-work .my-work ul li{
+	display: inline-block;
+	line-height: 25px;
+	list-style-type: none;
+	text-align: justify;
+}
+   li:before {
+    content: "⚫";
+    padding-right: 10px;
+   }
+
+.skill-and-work .h-line{
+	margin-top: 50px;
+	display: inline-block;
+	background-color: black;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 30px;
+}
+
+
+
+.bot-discription{
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.bot-discription .image{
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+
+}
+
+
+.bot-discription .image img{
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+	background-color: #dde3e7;
+	border-radius: 80px;
+	margin-left: 50px;	
+}
+
+.bot-discription .discription{
+	display: inline-block;
+	width: 800px;
+	text-align: right;
+	vertical-align: top;
+	padding-left: 70px;
+}
+
+
+footer{
+	background-color: #000000;
+	width: 100%;
+	padding-top: ;
+	display: inline-block;
+	padding-top: 45px;
+}
+
+footer .contacts{
+	color: white;
+	display: inline-block;
+	padding-left: 50px;
+	width: 240px;
+	vertical-align: top;
+}
+
+footer .contacts h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: normal;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+footer .contacts .email{
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+footer .social-network{
+	color: white;
+	display: inline-block;
+	padding-left: 60px;
+	width: 160px;
+	vertical-align: top;
+}
+
+footer .social-network h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: normal;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+footer .social-network a{
+	display: inline-block;
+	width: 100%;
+	color: white;
+}
+
+
+footer .grad{
+	display: inline-block;
+	padding-left: 140px;
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	background: radial-gradient(circle closest-side,
+    white 40%, white 60%,
+    black 60%,  black 80%,
+    white 80%, white 99%,
+    transparent 100%
+    );
+}
+
+
+footer .grad p{
+	padding: 110px 110px 100px 30px;
+	font-size: 30px;
+}
+
+
+footer .signature{
+	color: white;
+	font-size: 20px;
+	padding-left: 100px;
+	padding-bottom: 30px;
+}
