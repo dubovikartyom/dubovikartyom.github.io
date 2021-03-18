@@ -83,6 +83,7 @@ main .content{
 	padding-left: 20px;
 	padding-bottom: 100px;
 	width: 900px;
+	position: relative;
 }
 
 main .content table{
@@ -132,53 +133,120 @@ footer {
 
 
 /*меню макетов*/
-
-main .content .layout-agnecy{
+main .layout-content{
+	height: 1000px;
+}
+main .content .layout{
+	width: 150px;
+	vertical-align: top;
+	position: absolute;
 	display: block;
 }
 
-main .content .layout-agnecy a img{
-	width: 600px;
-	padding-bottom: 50px;
+
+main .content a img{
+	box-shadow: 7px 7px 10px #b8b6b2;
 }
+
+
+
+main .content .agnecy{
+	top: 50%;
+	margin-top: -500px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+main .content .agnecy a img{
+	width: 200px;
+}
+
+main .content .agnecy a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 
 
 
 main .content .grad{
-	display: block;
-
+	top: 50%;
+	margin-top: -500px;
+	left: 50%;
+	margin-left: -150px;
 }
 
 main .content .grad a img{
-	width: 600px;
-	padding-bottom: 50px;
+	width: 200px;
 }
+
+main .content .grad a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+
 
 
 main .content .about-me{
-	display: block;
+	top: 50%;
+	margin-top: -500px;
+	left: 50%;
+	margin-left: 100px;	
 }
 
 main .content .about-me a img{
-	width: 600px;
-	padding-bottom: 50px;
+	width: 200px;
 }
+
+main .content .about-me a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
 
 main .content .story{
-	display: block;
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -400px;
+}
+main .content .story a img{
+	width: 200px;
 }
 
-main .content .story a img{
-	width: 600px;
-	padding-bottom: 50px;
+main .content .story a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+
+main .content .hexagons{
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -150px;
 }
 
 main .content .hexagons a img{
-	width: 600px;
-	padding-bottom: 50px;
+	width: 200px;
 }
 
-
+main .content .hexagons a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
 
 
