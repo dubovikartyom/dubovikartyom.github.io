@@ -58,6 +58,8 @@ body{
 .head nav a:hover{
 	border-bottom: 2px solid black;
 	font-weight: bold;
+	transition-duration: 0.85s;
+	transform: scale(1.25);
 }
 
 
@@ -108,6 +110,11 @@ body{
 	display: inline-block;
 	width: 390px;
 	height: 400px;	
+}
+
+.about-me .content .photo img:hover{
+	transition-duration: 0.85s;
+	transform: scale(1.25);
 }
 
 .about-me .content .description{
@@ -201,52 +208,247 @@ body{
 }
 
 
-
 .my-skill .grad .photoshop{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	/*background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);*/
 	margin-bottom: 10px;
 	line-height: 40px;
 	padding-left: 15px;
 	width: 500px;
+	animation-name: photoshop;
+	animation-duration: 3s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;
+
+
+}
+@keyframes photoshop{
+	0%{
+	    background-image: linear-gradient(90deg, #d1d1d1 0%, white 0%);
+	}
+	5%{
+	    background-image: linear-gradient(90deg, #d1d1d1 2%, white 2%);
+	}
+	10%{
+	    background-image: linear-gradient(90deg, #d1d1d1 4%, white 4%);
+	}
+	20%{
+	    background-image: linear-gradient(90deg, #d1d1d1 6%, white 6%);
+	}
+	30%{
+	    background-image: linear-gradient(90deg, #d1d1d1 8%, white 8%);
+	}
+	40%{
+	    background-image: linear-gradient(90deg, #d1d1d1 10%, white 10%);
+	}	
+	50%{
+	    background-image: linear-gradient(90deg, #d1d1d1 12%, white 12%);
+	}
+	60%{
+	    background-image: linear-gradient(90deg, #d1d1d1 14%, white 14%);
+	}	
+	70%{
+	    background-image: linear-gradient(90deg, #d1d1d1 16%, white 16%);
+	}
+	80%{
+	    background-image: linear-gradient(90deg, #d1d1d1 18%, white 18%);
+	}
 	
+	100%{
+		background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+
+	}
 }
 .my-skill .grad .html{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+	/*background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);*/
 	margin-bottom: 10px;
 	line-height: 40px;
 	padding-left: 15px;
 	width: 500px;
+	animation-name: html;
+	animation-duration: 3s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;
 }
+
+@keyframes html{
+	0%{
+	    background-image: linear-gradient(90deg, #d1d1d1 0%, white 0%);
+	}
+	25%{
+	    background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);
+	}
+	30%{
+	    background-image: linear-gradient(90deg, #d1d1d1 10%, white 10%);
+	}
+	45%{
+	    background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	}
+	60%{
+	    background-image: linear-gradient(90deg, #d1d1d1 30%, white 30%);
+	}
+	75%{
+	    background-image: linear-gradient(90deg, #d1d1d1 40%, white 40%);
+	}	
+	85%{
+	    background-image: linear-gradient(90deg, #d1d1d1 50%, white 50%);
+	}
+	95%{
+	    background-image: linear-gradient(90deg, #d1d1d1 60%, white 60%);
+	}	
+	
+	100%{
+		background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+
+	}
+}
+
 .my-skill .grad .css{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+	/*background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);*/
 	margin-bottom: 10px;
 	line-height: 40px;
 	padding-left: 15px;
 	width: 500px;
+	animation-name: css;
+	animation-duration: 3s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;
 }
+
+@keyframes css{
+	0%{
+	    background-image: linear-gradient(90deg, #d1d1d1 0%, white 0%);
+	}
+	25%{
+	    background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);
+	}
+	30%{
+	    background-image: linear-gradient(90deg, #d1d1d1 10%, white 10%);
+	}
+	45%{
+	    background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	}
+	60%{
+	    background-image: linear-gradient(90deg, #d1d1d1 30%, white 30%);
+	}
+	75%{
+	    background-image: linear-gradient(90deg, #d1d1d1 40%, white 40%);
+	}	
+	85%{
+	    background-image: linear-gradient(90deg, #d1d1d1 50%, white 50%);
+	}
+	95%{
+	    background-image: linear-gradient(90deg, #d1d1d1 60%, white 60%);
+	}	
+	
+	100%{
+		background-image: linear-gradient(90deg, #d1d1d1 70%, white 70%);
+
+	}
+}
+
 .my-skill .grad .js{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+	/*background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);*/
 	margin-bottom: 10px;
 	line-height: 40px;
 	padding-left: 15px;
 	width: 500px;
+	animation-name: js;
+	animation-duration: 3s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;
 }
+
+@keyframes js{
+	0%{
+	    background-image: linear-gradient(90deg, #d1d1d1 0%, white 0%);
+	}
+	25%{
+	    background-image: linear-gradient(90deg, #d1d1d1 3%, white 3%);
+	}
+	30%{
+	    background-image: linear-gradient(90deg, #d1d1d1 6%, white 6%);
+	}
+	45%{
+	    background-image: linear-gradient(90deg, #d1d1d1 10%, white 10%);
+	}
+	60%{
+	    background-image: linear-gradient(90deg, #d1d1d1 13%, white 13%);
+	}
+	75%{
+	    background-image: linear-gradient(90deg, #d1d1d1 15%, white 15%);
+	}	
+	85%{
+	    background-image: linear-gradient(90deg, #d1d1d1 17%, white 17%);
+	}
+	95%{
+	    background-image: linear-gradient(90deg, #d1d1d1 18%, white 18%);
+	}	
+	
+	100%{
+		background-image: linear-gradient(90deg, #d1d1d1 20%, white 20%);
+
+	}
+}
+
 .my-skill .grad .angular{
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);
+	/*background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);*/
 	line-height: 40px;
 	padding-left: 15px;
 	width: 500px;
+	animation-name: angular;
+	animation-duration: 3s;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;		
 }
+
+@keyframes angular{
+	0%{
+	    background-image: linear-gradient(90deg, #d1d1d1 0%, white 0%);
+	}
+	30%{
+	    background-image: linear-gradient(90deg, #d1d1d1 1%, white 1%);
+	}
+	50%{
+	    background-image: linear-gradient(90deg, #d1d1d1 2%, white 2%);
+	}
+	70%{
+	    background-image: linear-gradient(90deg, #d1d1d1 3%, white 3%);
+	}
+	80%{
+	    background-image: linear-gradient(90deg, #d1d1d1 4%, white 4%);
+	}
+	
+	100%{
+		background-image: linear-gradient(90deg, #d1d1d1 5%, white 5%);
+
+	}
+}
+
 
 .my-skill .grad table{
 	width: 500px;
@@ -419,6 +621,10 @@ footer .social-network a{
 	color: white;
 }
 
+footer .social-network a:hover{
+	transition-duration: 0.85s;
+	transform: scale(1, 2);
+}
 
 footer .grad{
 	display: inline-block;
