@@ -29,6 +29,7 @@ header nav a{
 
 header nav a:hover{
 	background-color: #ff3f40;
+	transition-duration: 0.85s;
 }
 
 .present .head{
@@ -204,12 +205,20 @@ header nav a:hover{
 
 .products nav a:hover{
 	color: #ff2d2d;
+	transition-duration: 0.85s;
 }
 
 .products .images{
 	display: inline-block;
 	width: 100%;
 	padding-top: 60px;
+}
+
+.products .images img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.85s;	
 }
 
 .products .images .top{
@@ -268,6 +277,13 @@ header nav a:hover{
 	padding-top: 70px;
 }
 
+.team .content img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.85s;	
+}
+
 
 .team .content .left-side{
 	display: inline-block;
@@ -278,6 +294,7 @@ header nav a:hover{
 	display: inline-block;
 	vertical-align: bottom;
 }
+
 
 
 .content .right-side{
@@ -320,6 +337,7 @@ header nav a:hover{
 
 .right-side nav a:hover{
 	color: #ff2d2d;
+	transition-duration: 0.85s;
 }
 
 .right-side .photos{
@@ -397,6 +415,11 @@ header nav a:hover{
 	text-transform: uppercase;
 	margin-left: 20px;
 
+}
+
+.subscribe .form input[type="submit"]:hover{
+	transition-duration: 0.85s;
+	transform: scale(1.25);
 }
 
 
@@ -501,8 +524,9 @@ header nav a:hover{
 .content .form form .submit input[type="submit"]{
 	display: inline-block;
 	border-radius: 6px;
-	color: #ffffff;
-	background-color: #ff3b3b;
+	border: 2px solid red;
+	color: red;
+	background-color: white;
 	padding-left: 250px;
 	padding-right: 270px;
 	margin-top: 45px;
@@ -510,7 +534,14 @@ header nav a:hover{
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
-	border: none;
+}
+
+
+.content .form form .submit input[type="submit"]:hover{
+	transition-duration: 0.85s;
+	border: 2px solid red;
+	color: white;
+	background-color: red;
 }
 
 
@@ -569,6 +600,11 @@ footer .icons a{
 	vertical-align: top;
 }
 
+footer .icons a:hover{
+	transition-duration: 0.85s;
+	transform: scale(1.25);
+}
+
 footer .icons .twitter{
 	display: inline-block;
 }
@@ -615,6 +651,7 @@ footer .icons .facebook{
 .button:hover{
 	background-color: #ff3f40;
 	color: white;
+	transition-duration: 0.85s;	
 }
 
 .h-line{
