@@ -1,0 +1,93 @@
+*{
+	bottom: 0;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	height: 1000px;
+	background-color: #2d5285;
+	position: relative;
+}
+
+.container .preloader{
+	background-color: #2d5285;
+	display: inline-block;
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -100px;
+	perspective: 50px;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.container .preloader .circle{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: white;
+}
+
+.container .preloader .first{
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	margin-left: -250px;
+	animation: ellipsis1 0.6s infinite;	
+}
+
+
+.container .preloader .second{
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	margin-left: -100px;
+	animation: ellipsis2 0.6s infinite;
+}
+
+.container .preloader .third{
+	position: absolute;
+	top: 50%;
+	left: 32px;
+	margin-left: 50px;
+	animation: ellipsis2 0.6s infinite;
+}
+
+.container .preloader .fourth{
+	position: absolute;
+	top: 50%;
+	left: 56px;
+	margin-left: 200px;
+	animation: ellipsis3 0.6s infinite;
+}
+
+@keyframes ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
