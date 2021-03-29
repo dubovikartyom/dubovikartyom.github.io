@@ -267,7 +267,22 @@ main .content .preloader a img:hover{
 }
 
 
+main .content .prechu{
+	top: 50%;
+	margin-top: 50px;
+	left: 50%;
+	margin-left: -400px;
+}
 
+main .content .prechu a img{
+	width: 200px;
+}
+
+main .content .prechu a img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
 
 
