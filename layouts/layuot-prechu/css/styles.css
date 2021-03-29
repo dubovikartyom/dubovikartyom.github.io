@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, arial;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+header {
+    position: relative;
+    padding-bottom: 90px;
+}
+
+header .icon {
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    background-color: #5094f2;
+    border-radius: 25px;
+    position: absolute;
+    top: 25px;
+    left: 140px;
+}
+
+
+header .icon img {
+    padding-top: 13px;
+}
+
+
+header h1 {
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+
+
+
+
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 140px;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 35px;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid #5094f2;
+}
+
+
+header .menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 55px;
+    height: 45px;
+    background-color: #5094f2;
+}
+
+header .menu .line {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    header .icon {
+        left: 30px;
+    }
+
+
+    header h1 {
+        left: 90px;
+    }
+
+
+    header nav {
+        right: 25px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    header .menu .line {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header .menu .line:first-child {
+        margin-top: 10px;
+    }
+
+    header .menu .line:not(:last-child) {
+        margin-bottom: 4px;
+    }
+}
+
+
+
+.product {
+    height: 480px;
+    width: 100%;
+    background-image: url(../img/bc-head.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+
+.product .layer {
+    width: 25px;
+    height: 60px;
+    top: 50%;
+}
+
+.product .left {
+    background-image: url(../img/layer-l.png);
+    position: absolute;
+    left: 65px;
+}
+
+.product .right {
+    background-image: url(../img/layer-r.png);
+    position: absolute;
+    right: 65px;
+}
+
+
+.product .iphone {
+    position: absolute;
+    width: 350px;
+    height: 420px;
+    background-repeat: no-repeat;
+    top: 35px;
+    left: 170px;
+    background-image: url(../img/iphone.png);
+}
+
+.product hgroup {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    color: white;
+}
+
+.product hgroup h2 {
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.product hgroup span {
+    font-size: 20px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.product hgroup .button {
+    display: block;
+    margin-top: 10px;
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #5094f2;
+    position: absolute;
+
+}
+
+
+.product hgroup .button img {
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.product hgroup .button a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .product .iphone {
+        top: 100px;
+        left: 100px;
+        width: 200px;
+        height: 240px;
+        background-size: cover;
+    }
+
+    .product hgroup {
+        right: 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .product .iphone {
+        top: 12px;
+        left: 35px;
+        width: 200px;
+        height: 240px;
+        background-size: cover;
+    }
+
+    .product hgroup {
+        top: 12px;
+        right: 70px;
+    }
+
+    .product .layer {
+        display: none;
+    }
+
+    .product {
+        height: 250px;
+    }
+}
+
+
+
+main {
+    position: relative;
+    box-sizing: border-box;
+}
+
+main .block {
+    position: absolute;
+    top: 20px;
+    width: 255px;
+    height: 275px;
+}
+
+main .block h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #5094f2;
+    font-weight: normal;
+}
+
+main .block span {
+    display: block;
+    color: #9f9f9f;
+}
+
+main .icon {
+    width: 185px;
+    height: 185px;
+    border-radius: 90px;
+    position: relative;
+}
+
+main .icon img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 45px;
+}
+
+main .massage {
+    left: 10%;
+}
+
+main .massage>.icon {
+    background-color: #5094f2;
+}
+
+main .view {
+    left: calc(50% - 130px);
+}
+
+main .view>.icon {
+    background-color: #d94748;
+}
+
+main .buy {
+    right: 10%;
+}
+
+main .buy>.icon {
+    background-color: #ebbb11;
+}
+
+main .hline {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    main .massage {
+        left: 1%;
+    }
+
+    main .view {
+        left: calc(50% - 130px);
+    }
+
+    main .buy {
+        right: 1%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    main {
+        padding-top: 0;
+    }
+
+    main .block {
+        position: relative;
+        display: block;
+        left: 40px;
+        padding-top: 25px;
+        height: 230px;
+    }
+
+    main .block .icon {}
+
+    main .block h3 {
+        position: absolute;
+        top: 0;
+        left: 250px;
+        width: 100%;
+    }
+
+    main .block span {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 250px;
+    }
+
+    main .hline {
+        display: block;
+    }
+
+}
+
+main .shopping {
+    position: absolute;
+    display: block;
+    top: 430px;
+    left: 30%;
+    color: #8c8d8f;
+    box-sizing: border-box;
+}
+
+main .shopping h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+main .shopping .image {
+    height: 280px;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+
+main .shopping .discription {
+    display: inline-block;
+    padding-left: 90px;
+    vertical-align: top;
+    width: 400px;
+}
+
+
+main .shopping .discription h3 {
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+main .shopping .discription span {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    main .shopping {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    main .shopping .discription {
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    main .shopping {
+        top: 850px;
+        left: 10%;
+    }
+
+    main .shopping h2 {
+        text-align: center;
+        ;
+    }
+
+    main .shopping .image {
+        padding-left: 20%;
+    }
+}
+
+
+footer{
+	width: 100%;
+	position: absolute;
+	top: 1500px;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+	padding-top: 30px;
+}
+
+footer span{
+	color: #979797;
+	padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 872px){
+	footer{
+		top: 1800px;
+	}
+}
+
+@media screen and (max-width: 872px){
+	footer{
+		top: 2000px;
+	}	
+}
