@@ -469,13 +469,9 @@ footer span{
 }
 
 
-@media screen and (max-width: 872px){
-	footer{
-		top: 1800px;
-	}
-}
 
-@media screen and (max-width: 872px){
+
+@media screen and (max-width: 890px){
 	footer{
 		top: 2000px;
 	}	
