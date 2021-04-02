@@ -54,12 +54,17 @@ main{
 	box-sizing: border-box;
 	min-height: 1000px;
 	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	flex-grow: 1;
 }
 
 
 main .leftbar{
 	display: inline-block;
 	width: 250px;
+	padding-top: 20px;
 	background-color: #000000;
 	color: white;
 	vertical-align: top;
@@ -85,7 +90,7 @@ main .content{
 	padding-left: 20px;
 	padding-bottom: 100px;
 	width: 900px;
-	position: relative;
+	flex-grow: 6;
 }
 
 main .content table{
@@ -139,7 +144,10 @@ footer {
 
 /*меню макетов*/
 main .layout-content{
-	height: 1000px;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
 }
 main .content .layout{
 	width: 150px;
@@ -151,42 +159,17 @@ main .content .layout{
 
 main .content a img{
 	box-shadow: 7px 7px 10px #b8b6b2;
-}
-
-
-
-main .content .agnecy{
-	top: 50%;
-	margin-top: -500px;
-	left: 50%;
-	margin-left: -400px;
-}
-
-main .content .agnecy a img{
 	width: 200px;
 }
 
-main .content .agnecy a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+
+
+main .content .item{
+    width: 200px;
 }
 
 
-
-
-main .content .grad{
-	top: 50%;
-	margin-top: -500px;
-	left: 50%;
-	margin-left: -150px;
-}
-
-main .content .grad a img{
-	width: 200px;
-}
-
-main .content .grad a img:hover{
+main .content a img:hover{
 	-webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -196,98 +179,6 @@ main .content .grad a img:hover{
 
 
 
-
-main .content .about-me{
-	top: 50%;
-	margin-top: -500px;
-	left: 50%;
-	margin-left: 100px;	
-}
-
-main .content .about-me a img{
-	width: 200px;
-}
-
-main .content .about-me a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
-
-
-main .content .story{
-	top: 50%;
-	margin-top: -200px;
-	left: 50%;
-	margin-left: -400px;
-}
-main .content .story a img{
-	width: 200px;
-}
-
-main .content .story a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
-
-
-main .content .hexagons{
-	top: 50%;
-	margin-top: -200px;
-	left: 50%;
-	margin-left: -150px;
-}
-
-main .content .hexagons a img{
-	width: 200px;
-}
-
-main .content .hexagons a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
-main .content .preloader{
-	top: 50%;
-	margin-top: -200px;
-	left: 50%;
-	margin-left: 100px;
-}
-
-main .content .preloader a img{
-	width: 200px;
-}
-
-main .content .preloader a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-
-main .content .prechu{
-	top: 50%;
-	margin-top: 50px;
-	left: 50%;
-	margin-left: -400px;
-}
-
-main .content .prechu a img{
-	width: 200px;
-}
-
-main .content .prechu a img:hover{
-	-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
 
 
 

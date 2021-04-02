@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, arial;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+header {
+    height: 80px;
+    background-color: #3c8dbc;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: white;
+}
+
+header hgroup{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+
+
+
+header hgroup h1{
+    font-weight: normal;
+    padding-right: 50px;
+}
+
+header hgroup h1 span{
+    font-weight: bolder;
+}
+
+
+
+
+header nav{
+    margin-right: 50px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+
+main aside{
+	flex-grow: 1;
+	background-color: #304c59;
+	flex-flow: column nowrap;
+    color: white;
+}
+
+main section{
+	flex-grow: 5;
+	background-color: #dedfdf;
+}

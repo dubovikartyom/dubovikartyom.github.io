@@ -1,4 +1,209 @@
-*{
-	padding: 0;
-	margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+.container {
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/bci.png);
+    background-repeat: no-repeat;
+    transform: translateZ(-10px);
+    transform: scale(3);
+    z-index: 0.5;
+
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    color: #b7bbbc;
+}
+
+header h1 {
+    font-size: 75px;
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    left: 220px;
+    font-weight: normal;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 55px;
+    font-family: Helvetica, arial;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    color: #b7bbbc;
+    text-decoration: none;
+}
+
+header .coffee {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+
+header hgroup {
+    position: absolute;
+    top: 255px;
+    right: 290px;
+    color: white;
+    font-family: Helvetica, arial;
+}
+
+header hgroup h2 {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+header hgroup span {
+    font-size: 35px;
+}
+
+header .button {
+    position: absolute;
+    top: 390px;
+    right: 400px;
+    width: 140px;
+    height: 40px;
+    background-color: #2a7551;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Helvetica, arial;
+    border: 5px solid #333c37;
+}
+
+header .button a {
+	display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container main {
+    position: absolute;
+    top: 490px;
+    min-height: 1735px;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    max-height: 1100px;
+}
+
+.container main .menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    position: relative;
+}
+
+.container main .menu .clip {
+    width: 195px;
+    max-height: 1000px;
+    padding-top: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 55px;
+    z-index: 3;
+}
+
+.container main .menu .clip:hover .content{
+    display: block;
+    filter: drop-shadow(5px 0 5px #dedede);
+}
+
+.container main .menu .clip:hover{
+    /*filter: drop-shadow(5px 0 5px #dedede);*/
+}
+
+
+.container main .menu .clip span{
+	display: block;
+	padding-left: 30px;
+	padding-top: 20px;
+	color: #676666;
+}
+
+.container main .menu .image {
+    width: 135px;
+    height: 155px;
+    clip-path: polygon(50% 0%, 93% 27%, 93% 76%, 50% 100%, 6% 76%, 6% 25%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container main .menu .responsive .image {
+    background-color: #6598e6;
+    background-image: url(../img/phone.png);
+}
+
+.container main .menu .ecommerce .image{
+	background-color: #fdcf0a;
+	background-image: url(../img/basket.png);
+	
+}
+
+.container main .menu .daily .image{
+	background-color: #12b367;
+	background-image: url(../img/planet.png);
+	
+}
+
+.container main .menu .search .image{
+	background-color: #e67624;
+	background-image: url(../img/loupe.png);
+	
+}
+
+.container main .menu .clip .content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding-left: 185px;
+    padding-right: 185px;
+    color: #4f4f4f;
+}
+
+.container main .menu .clip .content .ipad{
+    padding-left: 300px;
+    padding-top: 60px;
+}
+
+.container main .menu .clip .content h3{
+    font-family: Helvetiaca, arial;
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
