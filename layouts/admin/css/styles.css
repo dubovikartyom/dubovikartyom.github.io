@@ -145,19 +145,19 @@ main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
 main aside {
-    flex-grow: 1;
+    flex-grow: 2;
     background-color: #304c59;
     flex-flow: column nowrap;
     color: white;
 }
 
 main section {
-    flex-grow: 11;
+    flex-grow: 10;
     background-color: #dedfdf;
 }
 
@@ -170,6 +170,7 @@ main aside {
     flex-flow: column wrap;
     justify-content: flex-start;
     padding-top: 20px;
+    flex-shrink: 0;
 }
 
 main aside hgroup {
@@ -220,6 +221,7 @@ main aside h3 {
     background-color: #1a2226;
     line-height: 30px;
     padding-left: 20px;
+    padding-right: 10px;
 }
 
 main aside a {
@@ -251,13 +253,20 @@ main aside .button span {
 
 
 main section {
-    padding: 20px;
+    padding-top: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 main section hgroup {
+    padding-left: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
+
 
 }
 
@@ -265,6 +274,7 @@ main section hgroup {
 
 main section hgroup nav {
     display: flex;
+    padding-right: 10px;
 }
 
 
@@ -273,6 +283,10 @@ main section hgroup nav ol li a {
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+main section hgroup nav ol li a:hover {
+    color: #0dcaf0;
 }
 
 main section hgroup nav ol li a span {
@@ -297,3 +311,106 @@ main section hgroup nav ol li a span {
 
     }
 }
+
+main section .forms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    min-height: 100vh;
+    flex: 1;
+}
+
+
+main section .forms .window {
+    background-color: white;
+    width: 600px;
+    flex-grow: 2;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 230px;
+    filter: drop-shadow(0 -3px 3px #ced2db);
+    flex-shrink: 3;
+
+}
+
+main section .forms .window h3 {}
+
+main section .forms .big {
+    max-height: 300px;
+}
+
+main section .forms .small {
+    max-height: 150px;
+}
+
+
+
+main section .forms .window form {}
+
+
+
+main section .forms .window form dl dd input[type="text"],
+[type="Password"],
+[type="email"] {
+    width: 100%;
+    flex-shrink: 2;
+    padding-left: 10px;
+}
+
+
+main section footer {
+    background-color: white;
+    height: 50px;
+    flex-shrink: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+
+main section footer p{
+    font-weight: bold;
+}
+
+main section footer span{
+    color: #0dcaf0;
+}
+
+@media screen and (max-width: 1465px){
+    main section .forms .window{width: 400px}
+}
+
+@media screen and (max-width: 1066px){
+    main section .forms .window{width: 300px}
+}
+
+@media screen and (max-width: 959px){
+    main section .forms .window{width: 400px}
+}
+
+@media screen and (max-width: 640px){
+    main section .forms .window{width: 300px}
+}
+
+@media screen and (max-width: 375px){
+    main section footer p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    main section .forms .window{width: 200px}
+}
+
+
+

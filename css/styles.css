@@ -65,11 +65,16 @@ main .leftbar{
 	display: inline-block;
 	width: 250px;
 	padding-top: 20px;
+	padding-left: 20px;
 	background-color: #000000;
 	color: white;
 	vertical-align: top;
 	border-radius: 0 0 50px 0;
 	box-shadow: 5px 5px 7px #acb5b3;
+}
+
+main .leftbar ul{
+	list-style: none;
 }
 
 main .leftbar a{
@@ -148,24 +153,26 @@ main .layout-content{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
+	align-content: flex-start;
 }
 main .content .layout{
 	width: 150px;
 	vertical-align: top;
-	position: absolute;
 	display: block;
 }
 
 
 main .content a img{
 	box-shadow: 7px 7px 10px #b8b6b2;
-	width: 200px;
+	width: 300px;
 }
 
 
 
 main .content .item{
-    width: 200px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 
