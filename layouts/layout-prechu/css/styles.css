@@ -262,6 +262,12 @@ header .menu .line {
     }
 }
 
+@media screen and (max-width: 610px){
+    .product .iphone{
+        display: none;
+    }
+}
+
 
 
 main {
