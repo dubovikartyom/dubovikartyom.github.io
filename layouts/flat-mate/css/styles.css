@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, arial;
+    box-sizing: border-box;
+}
+
+.bcc {
+    background-size: cover;
+    background-image: url(../img/layer.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(44, 47, 69, 0.9);
+    color: white;
+    min-height: 800px;
+    padding-top: 50px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+header .btn-secondary {
+    color: white;
+    background-color: #48526b;
+    border-color: #48526b;
+}
+
+header span{
+    padding-right: 10px;
+}
+
+header .content{
+    padding-top: 150px;
+}
+
+header .content h2{
+    margin-bottom: 50px;
+}
+
+header .content p{
+    
+    margin-bottom: 50px;
+}
+
+header .content .btn-success {
+    color: #fff;
+    background-color: #67bf95;
+    border-color: #67bf95;
+}
+
+header .content .btn-success span{
+    text-transform: capitalize;
+}
+
+header .content .logo{
+    text-align: right;
+}
+
+
+header .content .logo img{
+    height: 300px;
+    width: 300px;
+
+}
+
+.fb{
+    min-height: 300px;
+}
+
+.fb .ico img{
+    height: 200px;
+    width: 170px;
+}
+
+
+.fb .buttons a img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+
+
+.carousel{
+    background-color: #52ad81;
+}
+
+.carousel hgroup{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel .slide .carousel-item img{
+    width: 100px;
+    height: 400px;
+}
+
+.tariffs{
+    min-height: 650px;
+}
+
+
+.tariffs hgroup{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tariffs hgroup h3{
+    font-weight: bold;
+}
+
+.tariffs .tables table{
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+}
+
+.tariffs .tables table a{
+    color: white;
+    text-decoration: none;
+}
+
+.tariffs .tables .free table tr th{
+    color: white;
+    background-color: #4b596c;
+}
+
+.tariffs .tables .free table tr td{
+    background-color: #e9eef3;
+
+}
+
+#none{
+    background-color: white;
+}
+
+
+.tariffs .tables .professional table tr th{
+    color: white;
+    background-color: #58ad52;
+}
+
+.tariffs .tables .professional table tr td{
+    background-color: #deebde;
+
+}
+
+.tariffs .tables .enterprise table tr th{
+    color: white;
+    background-color: #52a1ad;
+}
+
+.tariffs .tables .enterprise table tr td{
+    background-color: #dee9ec;
+
+}
+.promo{
+    margin: 0;
+    padding: 0;
+}
+
+.promo .video{
+    margin: 0;
+    padding: 0;
+    background-color: #2d3136;
+}
+
+.promo .hgroup h2{
+    line-height: 100px;
+    background-color: #e9eaed;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.massage{
+    background-color: #2d3136;
+}
+
+.massage .mail img{
+    height: 100px;
+    width: 100px;
+}
+
+.massage p{
+    color: white;
+    margin-bottom: 0;
+}
+
+.massage span{
+    color: red;
+
+}
+
+.massage .form-control{
+    background-color: #2e3237;  
+    border: 1px solid #4c4f53;
+}
+
+
+footer{
+    background-color: #2a2d33;
+    color: white;
+    padding-top: 20px;
+}
+
+footer .brand img{
+    width: 20px;
+    height: 20px;
+}
+
+footer .brand p{
+    padding-left: 10px;
+}
+
+footer .links a{
+    padding-left: 15px;
+}
+
+footer .links a img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}

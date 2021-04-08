@@ -122,27 +122,28 @@ header .button a {
     justify-content: space-evenly;
     padding-top: 65px;
     position: relative;
+    
 }
 
 .container main .menu .clip {
     width: 195px;
     max-height: 1000px;
     padding-top: 25px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     padding-left: 55px;
     z-index: 3;
 }
 
 .container main .menu .clip:hover .content{
     display: block;
-    filter: drop-shadow(5px 0 5px #dedede);
-}
 
-.container main .menu .clip:hover{
     /*filter: drop-shadow(5px 0 5px #dedede);*/
 }
+
+.container main .menu .clip:hover .screen{
+    margin-top: 200px;
+}
+
+
 
 
 .container main .menu .clip span{
@@ -185,14 +186,15 @@ header .button a {
 }
 
 .container main .menu .clip .content{
-    display: none;
+    
+    color: #4f4f4f;
     position: absolute;
     top: 100%;
-    right: 0;
     left: 0;
-    padding-left: 185px;
-    padding-right: 185px;
-    color: #4f4f4f;
+    right: 0;
+    margin-left: 230px;
+    margin-right: 230px;
+    display: none;
 }
 
 .container main .menu .clip .content .ipad{
@@ -205,5 +207,13 @@ header .button a {
     font-weight: normal;
     font-size: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
 }
 
+
+.container main .menu .screen{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
