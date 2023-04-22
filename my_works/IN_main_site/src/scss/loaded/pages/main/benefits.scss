@@ -1,0 +1,116 @@
+@import "../common.scss";
+
+.benefits {
+  background-color: #000000;
+  margin-top: 280px;
+
+  @include media(tablet) {
+    margin-top: 50px;
+  }
+
+  &_content {
+    color: white;
+    padding: 120px 0 0;
+
+    @include media(tablet) {
+      padding: 65px 0 0;
+    }
+
+    @include media(mobile) {
+      padding-top: 50px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 50px;
+      width: 660px;
+
+      @include media(tablet) {
+        font-size: 30px;
+        line-height: 34px;
+        width: 100%;
+        padding-bottom: 120px;
+
+        @include media(mobile) {
+          padding-bottom: 30px;
+        }
+      }
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+
+      @include media(tablet) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 120px;
+
+      @include media(tablet) {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        margin-bottom: 65px;
+      }
+
+      @include media(mobile) {
+        margin-bottom: 50px;
+      }
+
+      &_pic {
+        img {
+          width: 568px;
+          height: 590px;
+
+          @include media(tablet) {
+            width: 405px;
+            height: 420px;
+          }
+
+          @include media(mobile) {
+            width: 280px;
+            height: 290px;
+          }
+        }
+      }
+
+      &_text {
+        width: 470px;
+
+        @include media(tablet) {
+          width: 100%;
+        }
+
+        h3 {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 44px;
+
+          @include media(tablet) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          padding-top: 40px;
+          color: #ada9a8;
+
+          @include media(tablet) {
+            font-size: 15px;
+            line-height: 22px;
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}

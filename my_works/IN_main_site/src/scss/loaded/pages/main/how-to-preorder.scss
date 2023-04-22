@@ -1,0 +1,109 @@
+@import "../common.scss";
+
+.how-to-preorder {
+  padding-top: 210px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 50px;
+
+    @include media(tablet) {
+      font-size: 30px;
+      line-height: 34px;
+      margin-top: 175px;
+    }
+
+    @include media(mobile){
+      margin-top: 160px;
+    }
+  }
+
+  &_content {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+
+    @include media(tablet) {
+      margin-top: 90px;
+      flex-direction: column;
+    }
+
+    @include media(mobile){
+        margin-top: 55px;
+    }
+
+    &_item {
+      width: 240px;
+      position: relative;
+
+      @include media(tablet) {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        align-items: center;
+      }
+
+      @include media(mobile){
+        margin-bottom: 45px;
+      }
+
+      .blur {
+        position: absolute;
+        top: -60px;
+        left: -110px;
+        z-index: -1;
+
+        @include media(tablet) {
+            top: -84px;
+            left: -95px;
+            width: 300px;
+            height: 270px;
+            filter: blur(62.5px);
+        }
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+
+        @include media(tablet) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      p {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
+
+        @include media(tablet) {
+          margin: 0;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+        }
+
+        .number {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          position: absolute;
+          left: -50px;
+          top: 0;
+
+          @include media(tablet) {
+            position: static;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,671 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "OpenSans";
+}
+
+
+
+header{
+	background-color: #f6f2f2;
+}
+
+header nav{
+	background-color: #313030;
+	height: 90px;
+	text-align: center;
+}
+
+header nav a{
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 80px;
+	padding: 10px 25px 0 25px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header nav a:hover{
+	background-color: #ff3f40;
+	transition-duration: 0.85s;
+}
+
+.present .head{
+	width: 500px;
+	display: inline-block;
+	padding-top: 100px;
+	vertical-align: top;
+	padding-bottom: 60px;
+}
+
+.present .head h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.present .head .description{
+	color: #494848;
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 55px;
+	text-align: justify;
+}
+
+.present .video{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 100px;
+	padding-left: 180px;
+}
+
+.present .video .video-content{
+	width: 550px;
+	height: 360px;	
+	box-shadow: 0 0 10px 2px black;
+}
+
+
+
+
+
+
+
+
+.services{
+	padding-top: 60px;
+}
+
+.services .container .services-left{
+	display: inline-block;
+	width: 640px;
+}
+
+.services-left h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 45px;
+}
+
+.services-left .description-services{
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 55px;
+	text-align: justify;
+}
+
+.services-left .button{
+	text-transform: capitalize;
+}
+
+.services .container .services-right{
+	display: inline-block;
+	vertical-align: top;
+	width: 550px;
+
+}
+
+
+.services-right h3{
+	padding-bottom: 15px;
+}
+
+.services-right .top{
+	display: inline-block;
+	width: 600px;
+	padding-left: 0;
+}
+
+.services-right .top .managment{
+	display: inline-block;
+	width: 230px;
+	padding-left: 100px;
+}
+
+.services-right .top .design{
+	display: inline-block;
+	padding-left: 30px;
+	width: 230px;
+}
+
+.services-right .bottom{
+	display: inline-block;
+	width: 600px;
+	padding-left: 0;
+	margin-top: 50px;
+}
+
+.services-right .bottom .logo{
+	display: inline-block;
+	width: 230px;
+	padding-left: 100px;
+}
+
+.services-right .bottom .animation{
+	display: inline-block;
+	width: 230px;
+	padding-left: 30px;
+}
+
+.img-services {
+	padding-bottom: 30px;
+}
+
+
+
+.products .head{
+    text-align: center;
+    vertical-align: top;
+}
+
+.products .head h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+.products .head .discription{
+	display: inline-block;
+	color: #494848;
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 520px;
+}
+
+.products .h-line{
+	background-color: #ff2d2d;
+	width: 130px;
+    display: block;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 1px 1px 1px #ffd5d5;
+}
+
+.products nav{
+	text-align: center;
+}
+
+.products nav a{
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	padding: 80px 50px 0 25px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.products nav a:hover{
+	color: #ff2d2d;
+	transition-duration: 0.85s;
+}
+
+.products .images{
+	display: inline-block;
+	width: 100%;
+	padding-top: 60px;
+}
+
+.products .images img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.85s;	
+}
+
+.products .images .top{
+	display: inline-block;
+	width: 100%;
+}
+
+.products .images .bottom{
+	display: inline-block;
+	width: 100%;
+}
+
+.products .images .picture{
+	height: 250px;
+	width: 290px;
+	display: inline-block;
+	padding-left: 15px;
+}
+
+
+
+
+.team .head{
+    display: inline-block;
+}
+
+.team .head h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 40px;
+}
+
+
+.team .head .description{
+	display: inline-block;
+	color: #494848;
+	font-size: 18px;
+	width: 450px;
+}
+
+
+.team .head .h-line{
+	background-color: #ff2d2d;
+	width: 130px;
+    display: block;
+    margin-top: 30px;
+    box-shadow: 0 1px 1px 1px #ffd5d5;
+}
+
+
+.team .content{
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 70px;
+}
+
+.team .content img:hover{
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.85s;	
+}
+
+
+.team .content .left-side{
+	display: inline-block;
+}
+
+
+.content .left-side .picture{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+
+.content .right-side{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 75px;
+}
+
+.content .right-side .head{
+	display: inline-block;
+}
+
+.right-side .head h3{
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.right-side .head .discription{
+	width: 630px;
+	display: inline-block;
+	color: #494848;
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+.right-side nav{
+	display: block;
+
+}
+
+.right-side nav a{
+	text-decoration: none;
+    color: #494848;
+	font-size: 18px;
+	padding-right: 25px;
+}
+
+.right-side nav a:hover{
+	color: #ff2d2d;
+	transition-duration: 0.85s;
+}
+
+.right-side .photos{
+	display: inline-block;
+	padding-top: 40px;
+}
+
+.right-side .photos .picture{
+	display: inline-block;
+	padding-right: 5px;
+}
+
+
+
+.subscribe{
+	background-color: #f5f0dd;
+	padding-bottom: 100px;
+}
+
+.subscribe .head{
+    color: #fdfcf8;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.subscribe .head h2{
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.subscribe .head .description{
+	font-size: 16px;
+}
+
+.subscribe .form{
+	display: inline-block;
+	padding-top: 60px;
+	padding-left: 230px;
+}
+
+
+.subscribe .form form{
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.subscribe .form input[type="email"]{
+	display: inline-block;
+	width: 500px;
+	line-height: 80px;
+	background-color: white;
+	border-radius: 6px;
+	color: #6b6b6b;
+	text-decoration: none;
+	margin-right: ;
+	padding-left: 40px;
+	text-transform: capitalize;
+	border: none;
+}
+
+.subscribe .form input[type="submit"]{
+	display: inline-block;
+	width: 200px;
+	padding: 0 65px;
+	color: #ff0000;
+	text-decoration: none;
+	border-radius: 6px;
+	background-color: #ff2d2d;
+	border: none;
+	color: white;
+	line-height: 80px;
+	text-transform: uppercase;
+	margin-left: 20px;
+
+}
+
+.subscribe .form input[type="submit"]:hover{
+	transition-duration: 0.85s;
+	transform: scale(1.25);
+}
+
+
+.subscribe .form form dl,dt,dd{
+	display: inline-block;
+}
+
+
+
+.contacts .head{
+	display: inline-block;
+	width: 730px;
+	padding-top: 50px;
+}
+
+.contacts .head h2{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 42px
+}
+
+
+.contacts .head .description{
+	display: inline-block;
+	color: #494848;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	width: 710px;
+}
+
+
+.contacts .head .h-line{
+	background-color: #ff2d2d;
+	width: 130px;
+    display: block;
+    margin-top: 30px;
+    box-shadow: 0 1px 1px 1px #ffd5d5;
+}
+
+.contacts .content{
+	display: inline-block;
+	width: 100%;
+}
+
+
+.contacts .content .form{
+	display: inline-block;
+	width: 730px;
+	padding-top: 75px;
+}
+
+
+.contacts .content .form form{
+	display: inline-block;
+}
+
+.contacts .content .form form .name,.mail,.massage,.submit{
+	display: inline-block;
+}
+
+
+.content .form form .name input[type="text"]{
+	display: inline-block;
+	background-color: #e5e5e5;
+	border-radius: 6px;
+	margin-right: 50px;
+	line-height: 70px;
+	padding-left: 35px;
+	width: 250px;
+	border: none;
+}
+
+.content .form form .mail input[type="email"]{
+	display: inline-block;
+	background-color: #e5e5e5;
+	border-radius: 6px;
+	line-height: 70px;
+	padding-left: 50px;
+	text-transform: capitalize;
+	width: 250px;
+	border: none;
+}
+
+
+.content .form form .massage textarea[type="text"]{
+	display: inline-block;
+	background-color: #e5e5e5;
+	border-radius: 6px;
+	margin-top: 45px;
+	padding-left: 50px;
+	padding-top: 35px;
+	padding-bottom: 200px;
+	border: none;
+	width: 590px;
+
+}
+
+
+.content .form form .submit input[type="submit"]{
+	display: inline-block;
+	border-radius: 6px;
+	border: 2px solid red;
+	color: red;
+	background-color: white;
+	padding-left: 250px;
+	padding-right: 270px;
+	margin-top: 45px;
+	line-height: 80px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.content .form form .submit input[type="submit"]:hover{
+	transition-duration: 0.85s;
+	border: 2px solid red;
+	color: white;
+	background-color: red;
+}
+
+
+.contacts .content .info{
+	display: inline-block;
+	background-color: #2d2d2d;
+	vertical-align: bottom;
+	color: #d5d5d5;
+	padding-top: 20px;
+	padding-left: 80px;
+	padding-bottom: 150px;
+	margin-left: 80px;
+}
+
+.contacts .content .info h4{
+	line-height: 90px;
+	text-transform: uppercase;
+}
+
+.contacts .content .info .address{
+	width: 290px;
+	font-size: 16px;
+}
+
+.contacts .content .info .mail{
+	line-height: 60px;
+	font-size: 16px;
+}
+
+.contacts .content .info .phone-number{
+	font-size: 16px;
+
+}
+
+
+footer{
+	background-color: #313030;
+	margin-top: 70px;
+	padding-top: 25px;
+}
+
+footer .copyright{
+	display: inline-block;
+	color: #8b8b8b;
+	text-align: left;
+	padding-right: 650px;
+}
+
+
+footer .icons{
+	display: inline-block;
+}
+
+footer .icons a{
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .icons a:hover{
+	transition-duration: 0.85s;
+	transform: scale(1.25);
+}
+
+footer .icons .twitter{
+	display: inline-block;
+}
+
+footer .icons .linkedin{
+	display: inline-block;
+	padding-left: 18px;
+}
+
+
+footer .icons .google{
+	display: inline-block;
+	padding-left: 18px;
+}
+
+
+footer .icons .facebook{
+	display: inline-block;
+	padding-left: 18px;
+}
+
+
+
+
+/*comon*/
+.container{
+	width: 1280px;
+	padding: 30px 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.button{
+	line-height: 55px;
+	padding: 0 65px;
+	border: 2px solid #ff0000;
+	display: inline-block;
+	color: #ff0000;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+.button:hover{
+	background-color: #ff3f40;
+	color: white;
+	transition-duration: 0.85s;	
+}
+
+.h-line{
+	display: inline-block;
+	width: 100%;
+	background-color: #ececec;
+	padding-top: 100px 0 0 0;
+	height: 2px;
+
+
+/*  у меня не сработал прием с еще одним div, поэтому я выровнял через padding
+.last-line{
+	display: inline-block;
+	width: 100%;
+}
+
+*/

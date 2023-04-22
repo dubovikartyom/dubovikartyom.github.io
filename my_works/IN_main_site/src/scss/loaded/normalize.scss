@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.1;
+}
+
+li {
+  list-style-type: none;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: var(--default-font-color)
+}

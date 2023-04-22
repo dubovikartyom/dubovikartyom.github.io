@@ -1,0 +1,40 @@
+@import "variables";
+
+:root {
+  --default-font-color: #000;
+  --h1: 46px;
+  --h2: 36px;
+  --h3: 24px;
+  --normal: 18px;
+  --small: 15px;
+  --vertical-rithm: 40px;
+  --main-page-content-horisontal-margin: 60px;
+  --spacing: 8px;
+}
+
+@media screen and (max-width: $tablet) {
+  :root {
+    --h1: 30px;
+    --h2: 24px;
+    --h3: 18px;
+    --normal: 15px;
+    --vertical-rithm: 24px;
+    --horisontal-content-padding: 40px;
+    --main-page-content-horisontal-margin: 40px;
+    --spacing: 6px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  :root {
+    --horisontal-content-padding: 20px;
+    --main-page-content-horisontal-margin: 20px;
+    --spacing: 4px;
+  }
+}
+
+@media screen and (max-width: $mobile-small) {
+  :root {
+    --main-page-content-horisontal-margin: 0;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../common.scss";
+
+.footer {
+  background-color: black;
+  margin-top: 160px;
+  padding: 80px 0;
+
+  @include media(tablet){
+    margin-top: 65px;
+    padding: 65px 0;
+  }
+
+  @include media(mobile){
+    margin-top: 55px;
+    padding: 65px 0 135px;
+  }
+
+  &_content {
+
+    &_logo {
+      padding-bottom: 45px;
+
+      @include media(tablet){
+        padding-bottom: 30px;
+      }
+
+      img {
+        width: 60px;
+        height: 25px;
+      }
+    }
+
+    &_text {
+      display: flex;
+
+      @include media(tablet){
+        flex-direction: column;
+      }
+
+      .desc {
+        color: #a8a5a2;
+        width: 280px;
+        font-size: 13px;
+        line-height: 20px;
+
+        @include media(tablet){
+            width: 230px;
+        }
+
+        @include media(mobile){
+            width: 100%;
+        }
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding-left: 95px;
+        font-size: 15px;
+        line-height: 22px;
+
+        @include media(tablet){
+            padding-left: 0;
+            padding-top: 15px;
+        }
+
+        @include media(mobile){
+            padding-top: 40px;
+        }
+      }
+    }
+
+    &_copyright {
+      color: #a8a5a2;
+      padding-top: 95px;
+      font-size: 13px;
+      line-height: 20px;
+
+      @include media(tablet){
+        padding-top: 15px;
+    }
+    }
+  }
+}

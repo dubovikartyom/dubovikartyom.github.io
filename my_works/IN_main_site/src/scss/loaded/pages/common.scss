@@ -1,0 +1,43 @@
+//общие стили разметка, отступы, цвета, остальное, шрифты, остальное.
+@import "./../normalize";
+@import "../mixins.scss";
+@import "../variables.scss";
+
+body {
+  font-family: 'Euclid Circular B';
+  color: black;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container-block {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include media(tablet) {
+      max-width: 768px;
+      padding: 0 40px;
+  }
+
+  @include media(mobile) {
+      width: 100%;
+      padding: 0 20px;
+  }
+}
+
+.container-content {
+  width: 942px;
+  margin: 0 auto;
+
+
+  @include media(tablet) {
+      width: 100%;
+      padding: 0 40px;
+  }
+
+  @include media(mobile) {
+      width: 100%;
+      padding: 0 20px;
+  }
+}
