@@ -2103,6 +2103,7 @@ span.error {
   line-height: 1.5;
   z-index: 1;
   display: inline-block;
+  background-color: black;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
