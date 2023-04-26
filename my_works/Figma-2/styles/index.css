@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&family=Staatliches&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  padding: 0 25px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.h1 {
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 100%;
+  color: #171400;
+}
+
+.h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: #242424;
+}
+
+.h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #4d4a4a;
+}
+
+.txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #505050;
+}
+
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button_theme_yellow {
+  background: #ffe000;
+  color: #3a3300;
+}
+
+.button_w_all {
+  width: 100%;
+}
+
+.button_size_m {
+  padding: 10px;
+}
+
+.section-first {
+  min-height: 100vh;
+  background: linear-gradient(107.56deg, #ffe000 0%, #c3b23a 100%);
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.section-first__inner {
+  max-width: 1228px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border-radius: 24px;
+  padding: 64px 0;
+}
+.section-first__title {
+  padding-bottom: 40px;
+}
+.section-first__card {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 345px;
+  background-color: #ffffff;
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.07), 0px 10.0266px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 5.36071px 17.869px rgba(0, 0, 0, 0.0417275), 0px 3.00517px 10.0172px rgba(0, 0, 0, 0.035), 0px 1.59602px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.664142px 2.21381px rgba(0, 0, 0, 0.0196802);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card__content {
+  padding: 16px;
+}
+.card__title {
+  padding-bottom: 12px;
+}
+.card__location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+.card__description {
+  padding-bottom: 45px;
+}
+.card__img {
+  width: 100%;
+}
+.card__location-icon {
+  max-width: 24px;
+  width: 100%;
+}

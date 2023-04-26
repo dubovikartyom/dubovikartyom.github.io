@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </head>
+  <body>
+    <video
+      autoplay
+      loop
+      class="video_back"
+      src="./assets/movie/particle.mp4"
+    ></video>
+    <div class="window">
+      <div class="card">
+        <h3>Play sound</h3>
+        <div class="flex-container">
+          <button class="btn" id="disablePlaySoundBtn">No</button>
+          <button class="btn" id="playSoundBtn">Yes</button>
+        </div>
+      </div>
+    </div>
+    <div class="page-wrap">
+      <header class="header">
+        <div class="container flex-container">
+          <h3 class="logo">Logo</h3>
+          <ul class="menu">
+            <li class="menu-item">
+              <span>Work</span>
+              <ul class="menu-nested">
+                <li class="menu-nested-item">
+                  <button
+                    onclick="selectTheme('wave.mp4', 'run.wav', 'sea-wave.mp3'); showTitle('secondTitle')"
+                    class="btn-menu"
+                  >
+                    Slow
+                  </button>
+                </li>
+                <li class="menu-nested-item">
+                  <button
+                    onclick="selectTheme('rotate_earth.mp4', 'sea_piano.mp3'); ; showTitle('thirdTitle')"
+                    class="btn-menu"
+                  >
+                    Normal
+                  </button>
+                </li>
+                <li class="menu-nested-item">
+                  <button
+                    onclick="selectTheme('molecule.mp4', 'forest.mp3'); showTitle('fourthTitle')"
+                    class="btn-menu"
+                  >
+                    Quick
+                  </button>
+                </li>
+                <li class="menu-nested-item">
+                  <button
+                    onclick="selectTheme('particle.mp4', 'classic.mp3'); showTitle('firstTitle')"
+                    class="btn-menu"
+                  >
+                    Super
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <span>Chill</span>
+              <ul class="menu-nested">
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Slow</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Normal</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Quick</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Super</button>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <span>Holliday</span>
+              <ul class="menu-nested">
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Slow</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Normal</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Quick</button>
+                </li>
+                <li class="menu-nested-item">
+                  <button class="btn-menu">Super</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div id="firstTitle" class="title-anim flex-container">
+            <h1 class="h1 main__title">Main Title</h1>
+            <p class="txt main__txt">
+              Каждый идет своим путём. Но все дороги всё равно идут в никуда.
+              Значит, весь смысл в самой дороге, как по ней идти… Если идешь с
+              удовольствием, значит, это твоя дорога. Если тебе плохо – в любой
+              момент можешь сойти с нее, как бы далеко ни зашел. И это будет
+              правильно.
+            </p>
+          </div>
+
+          <div id="secondTitle" class="title-anim flex-container">
+            <h1 class="h1 main__title">Second title</h1>
+            <p class="txt main__txt">
+              Чтобы извлечь из жизни максимум, человек должен уметь изменяться.
+              К сожалению, человек изменяется с большим трудом, и изменения эти
+              происходят очень медленно. Многие тратят на это годы. Самым
+              трудным является по-настоящему захотеть измениться.
+            </p>
+          </div>
+
+          <div id="thirdTitle" class="title-anim flex-container">
+            <h1 class="h1 main__title">Third title</h1>
+            <p class="txt main__txt">
+              Ты не должен путать одиночество и уединение. Одиночество для меня
+              понятие психологическое, душевное, уединённость же — физическое.
+              Первое отупляет, второе — успокаивает.
+            </p>
+          </div>
+
+          <div id="fourthTitle" class="title-anim flex-container">
+            <h1 class="h1 main__title">Fourth title</h1>
+            <p class="txt main__txt">
+              Весь фокус в том, на что ориентироваться… Каждый из нас сам делает
+              себя либо несчастным, либо сильным. Объём работы, необходимой и в
+              первом, и во втором случае, – один и тот же.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

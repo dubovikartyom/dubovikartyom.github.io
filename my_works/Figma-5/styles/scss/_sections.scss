@@ -1,0 +1,163 @@
+$all-screen: 100vh;
+$count-shadow-step: 2;
+$height-shadow-step: 10;
+$screen-height-shadow-step: calc(
+  #{$all-screen} - #{$height-shadow-step * $count-shadow-step}px
+);
+$color-shadow-step-collection: ($c-grey-550, $c-grey-450);
+
+.section-gradient {
+  min-height: $screen-height-shadow-step;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  margin-bottom: #{$height-shadow-step * $count-shadow-step}px;
+  &__shadow {
+    position: absolute;
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    @for $i from 1 through $count-shadow-step {
+      &_#{$i} {
+        bottom: -#{$height-shadow-step * $i}px;
+        width: calc(100% - #{40 * $i}px);
+        background-color: nth($color-shadow-step-collection, $i);
+        left: #{20 * $i}px;
+      }
+    }
+  }
+}
+
+.main-wrap {
+  min-height: $screen-height-shadow-step;
+  position: relative;
+  &__bg {
+    position: absolute;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    &-object {
+      position: absolute;
+      height: 100%;
+    }
+  }
+  &__content {
+    position: relative;
+    min-height: $screen-height-shadow-step;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__nav {
+    padding-bottom: 45px;
+  }
+}
+
+.main-header {
+  display: grid;
+  column-gap: 20px;
+  padding-top: 50px;
+  grid-template-areas: "info" "logo" "nav";
+  @media screen and (min-width: $md) {
+    grid-template-areas: "logo info" "logo nav";
+  }
+  &__logo {
+    grid-area: logo;
+    margin-bottom: 30px;
+    @media screen and (min-width: $md) {
+      margin-bottom: 0;
+    }
+  }
+  &__info {
+    grid-area: info;
+    margin-bottom: 30px;
+    @media screen and (min-width: $md) {
+      margin-bottom: 16px;
+    }
+  }
+  &__nav {
+    grid-area: nav;
+  }
+  &__info,
+  &__nav {
+    justify-self: start;
+    @media screen and (min-width: $md) {
+      justify-self: end;
+    }
+  }
+  &__link:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 130px;
+}
+
+.btn-lang {
+  border: none;
+  background-color: transparent;
+  font-size: $txt-exsm;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 7px;
+  border-radius: 8px;
+  &_active {
+    background-color: $c-accent;
+  }
+}
+
+.contact-info {
+  &__item {
+    padding-left: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      position: absolute;
+      padding: 3px;
+      border-radius: 50%;
+      left: 0;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  &:hover {
+    color: $c-accent;
+    border-bottom-color: $c-accent;
+  }
+}
+
+.btn-circle {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid rgba($c-white, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+  &__arrow {
+    display: inline-block;
+    max-width: 18px;
+    width: 100%;
+    path {
+      stroke: white;
+      transition: stroke 0.3s ease;
+    }
+  }
+  &:hover {
+    border-color: $c-accent;
+    path {
+      stroke: $c-accent;
+    }
+  }
+}

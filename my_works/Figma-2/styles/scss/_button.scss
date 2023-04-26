@@ -1,0 +1,24 @@
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.button_theme_yellow {
+  background: #ffe000;
+  color: #3a3300;
+}
+
+.button_w_all {
+  width: 100%;
+}
+
+.button_size_m {
+  padding: 10px;
+}

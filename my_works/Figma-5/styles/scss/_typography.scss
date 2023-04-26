@@ -1,0 +1,21 @@
+.txt {
+  font-size: $txt-normal;
+  line-height: 19.5px;
+  &-exmd {
+    font-size: $txt-exmd;
+    line-height: 19px;
+  }
+  &_bold {
+    font-weight: bold;
+  }
+  &_normal {
+    font-weight: 400;
+  }
+  &_center {
+    text-align: center;
+  }
+}
+
+.h1 {
+  font-size: $h1;
+}

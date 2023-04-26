@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --grey--main: #e5e5e5;
+  --blue-main: #03045e;
+  --blue-main-05: #03055e74;
+  --orange: #f2994a;
+  --container-space: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.page-wrap {
+  background-color: var(--grey--main);
+  position: relative;
+}
+
+.section-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: calc(1249px + var(--container-space) * 2);
+  margin: 0 auto;
+  padding: 0 var(--container-space);
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+/* txt */
+.h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--blue-main);
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 68px;
+  color: var(--blue-main);
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue-main);
+  text-decoration: none;
+}
+
+.txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue-main-05);
+}
+
+.txt--orange {
+  color: var(--orange);
+}
+
+/* btn */
+.btn {
+  background: var(--grey--main);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 1px #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--blue-main);
+  padding: 11px 35px;
+  text-decoration: none;
+  display: inline-block;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-lg {
+  padding: 17px 38px;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 1px #ffffff;
+}
+
+/* header */
+
+.header__logo-svg {
+  max-width: 43px;
+  padding-right: 7px;
+}
+
+.header__nav-link {
+  margin-right: 40px;
+}
+
+.header__container {
+  max-width: 1180px;
+  padding-top: 66px;
+}
+
+/* main */
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.main__content {
+  max-width: 585px;
+}
+
+.main__image {
+  max-width: 624px;
+}
+
+.main__title,
+.main__txt {
+  padding-bottom: 38px;
+}
+
+/* section card items */
+.card {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.card-item {
+  background: linear-gradient(
+    111.68deg,
+    rgba(255, 255, 255, 0.29) 7.59%,
+    rgba(255, 255, 255, 0.39) 102.04%
+  );
+  border: 3px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(22px);
+  max-width: 317px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 33px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-item--lg {
+  max-width: 347px;
+}
+
+.card__img {
+  width: 148px;
+  height: 148px;
+  background: linear-gradient(
+    111.68deg,
+    rgba(255, 255, 255, 0.29) 7.59%,
+    rgba(255, 255, 255, 0.39) 102.04%
+  );
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  padding-bottom: 30px;
+}
+
+/* circle styles */
+
+.circle-abs {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle--md {
+  width: 108.75px;
+  height: 108.75px;
+}
+
+.circle--lg {
+  width: 302px;
+  height: 302px;
+}
+
+.circle--teal {
+  background: linear-gradient(
+    213.1deg,
+    #94b3ae 26.26%,
+    rgba(255, 255, 255, 0) 110.29%
+  );
+}
+
+.circle--pink {
+  background: linear-gradient(
+    218.46deg,
+    #d9b1c6 24.44%,
+    rgba(217, 177, 198, 0) 77.86%
+  );
+}
+
+.circle--blur-md {
+  filter: blur(3px);
+}
+
+.circle--blur-lg {
+  filter: blur(38px);
+}
+
+.circle-first {
+  left: -114px;
+  top: -82px;
+}
+
+.circle-second {
+  left: calc(50% - 150px);
+  top: -133px;
+}
+
+.circle-third {
+  left: 19%;
+  top: 10%;
+}
+
+.circle-fourth {
+  left: 539.35px;
+  top: 957.74px;
+}
+
+.circle-fifth {
+  top: 50%;
+  left: 80%;
+}

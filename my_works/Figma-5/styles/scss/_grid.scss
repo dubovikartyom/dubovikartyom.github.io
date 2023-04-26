@@ -1,0 +1,64 @@
+@mixin make-container($max-width, $padding-x: $container-padding-x) {
+  max-width: $max-width + $container-padding-x * 2;
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-lg {
+  @include make-container($container-lg);
+}
+
+.container-sm {
+  @include make-container($container-md);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: #{-$gutter-col} #{-$gutter-col} 0;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: $gutter-col $gutter-col 0;
+}
+
+@mixin col-size($width, $padding: $gutter-col) {
+  flex: 0 0 auto;
+  width: $width;
+  padding: $gutter-col $gutter-col 0;
+}
+
+@for $i from 1 through $grid-col-count {
+  .col-#{$i} {
+    @include col-size($grid-col-size * $i);
+  }
+}
+
+@media all and (min-width: $sm) {
+  @for $i from 1 through $grid-col-count {
+    .col-sm-#{$i} {
+      @include col-size($grid-col-size * $i);
+    }
+  }
+}
+
+@media all and (min-width: $md) {
+  @for $i from 1 through $grid-col-count {
+    .col-md-#{$i} {
+      @include col-size($grid-col-size * $i);
+    }
+  }
+}
+
+@media all and (min-width: $lg) {
+  @for $i from 1 through $grid-col-count {
+    .col-lg-#{$i} {
+      @include col-size($grid-col-size * $i);
+    }
+  }
+}

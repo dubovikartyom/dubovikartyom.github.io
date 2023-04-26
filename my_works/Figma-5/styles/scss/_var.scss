@@ -1,0 +1,64 @@
+$container-lg: 1338px;
+$container-md: 1290px;
+$container-padding-x: 15px;
+$exsm: 368px;
+$sm: 768px;
+$md: 1024px;
+$lg: 1440px;
+$exlg: 1920px;
+$gutter-col: 15px;
+$grid-col-count: 12;
+$grid-col-size: math.div(100%, $grid-col-count);
+
+// text size
+/* 
+$txt-sm: rem(15); */
+$txt-exsm: rem(12);
+$txt-normal: rem(16);
+$txt-exmd: rem(19);
+/* 
+$txt-md: rem(20);
+$txt-lg: rem(25);
+$txt-exlg: rem(30); */
+$h1: rem(38);
+$h2: rem(30);
+$h3: rem(22);
+$h3-caps: rem(14);
+$h4: rem(16);
+/* $h5: rem(25); */
+
+// colors
+$c-indigo: #323264;
+$c-indigo-alt: #46466e;
+$c-indigo-soft: #686887;
+$c-accent: #f0145a;
+$c-blue-400: #24a3ff;
+$c-blue-600: #0085ff;
+$c-blue-700: #006ccf;
+$c-grey-300: #f5f5fa;
+$c-white: #ffffff;
+$c-grey-400: #ededf7;
+$c-grey-450: #e7e7f2;
+$c-grey-500: #e6e6f0;
+$c-grey-600: #b3b3ba;
+$c-grey-550: #cacadb;
+$gradient-main: linear-gradient(
+  128.63deg,
+  $c-indigo 0%,
+  $c-indigo 73.96%,
+  #a54b5f 100%
+);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  $c-indigo 14.33%,
+  $c-indigo 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(323.35deg, $c-accent 6.7%, #693264 70.36%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  $c-indigo 11.93%,
+  $c-indigo 57.17%,
+  #643e72 87.46%
+);
+$gradient-red-text: linear-gradient(90.13deg, $c-accent 0.84%, #ef8080 99.96%);

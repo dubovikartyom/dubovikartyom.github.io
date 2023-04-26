@@ -1,0 +1,43 @@
+.theme-dark {
+  background: $gradient-supersoft;
+  .txt-primary,
+  .txt-secondary,
+  .btn-lang {
+    color: $c-white;
+  }
+  .logo_theme_primary {
+    fill: $c-white;
+  }
+  .icon_theme_secondary {
+    fill: $c-white;
+  }
+  .contact-info__item::before {
+    background-color: $c-white;
+  }
+  .link-primary {
+    color: $c-white;
+  }
+}
+
+.theme-light {
+  background-color: $c-white;
+  .txt-primary {
+    color: $c-indigo;
+  }
+  .txt-secondary,
+  .btn-lang {
+    color: $c-grey-600;
+  }
+  .logo_theme_primary {
+    fill: $c-indigo;
+  }
+  .icon_theme_secondary {
+    fill: $c-grey-600;
+  }
+  .contact-info__item::before {
+    background-color: $c-grey-600;
+  }
+  .link-primary {
+    color: $c-blue-400;
+  }
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@mixin font-face($name, $font-type, $path, $weight: normal, $style: normal) {
+  $eot: "eot";
+  $eotFix: "eot?#iefix";
+  $woff2: "woff2";
+  $woff: "woff";
+  $ttf: "ttf";
+  $svg: "svg";
+  $font-path: $path + "/" + $font-type;
+  @font-face {
+    font-family: $name;
+    src: url($font-path + "." + $eot);
+    src: url($font-path + "." + $eotFix) format("embedded-opentype"),
+      url($font-path + "." + $woff2) format($woff2),
+      url($font-path + "." + $woff) format($woff),
+      url($font-path + "." + $ttf) format("truetype"),
+      url($font-path + "." + $svg + "#" + $font-type) format("svg");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+/* $path: "../assets/fonts/GraphikLCG";
+$fontGraphic: "Graphik LCG";
+
+@include font-face($fontGraphic, "GraphikLCG-Regular", $path);
+@include font-face($fontGraphic, "GraphikLCG-Semibold", $path, 600); */
